@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffcc33, #ff6699);
+    background-attachment: fixed;
+}
+
+#gameContainer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    max-width: 500px;
+}
+
+#problem {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#answer {
+    width: 80px;
+    padding: 10px;
+    font-size: 24px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit {
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#submit:hover {
+    background-color: #218838;
+}
+
+#feedback {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#error {
+    color: red;
+}
+
+@keyframes highlight {
+    0% { background-color: yellow; }
+    100% { background-color: transparent; }
+}
+
+.highlight {
+    animation: highlight 2s ease-in-out;
+}
+
+#rewardImage {
+    margin-top: 20px;
+    width: 200px;
+    border: 5px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 0 20px gold;
+}
+
+
+
+@keyframes highlightReward {
+    0% {
+        background-color: yellow;
+        transform: scale(1);
+    }
+    50% {
+        background-color: orange;
+        transform: scale(1.1);
+    }
+    100% {
+        background-color: yellow;
+        transform: scale(1);
+    }
+}
+
+.show-reward {
+    display: block;
+    animation: highlightReward 2s ease-in-out;
+}

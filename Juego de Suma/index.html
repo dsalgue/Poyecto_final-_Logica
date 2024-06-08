@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones combinadas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1>Operaciones combinadas</h1>
+        <div id="problem">
+            <span id="num1"></span> <span id="operation"></span> <span id="num2"></span> = 
+            <input type="number" id="answer" />
+            <button id="submit">Enviar</button>
+        </div>
+        <p id="feedback"></p>
+        <p>Puntaje: <span id="score">0</span></p>
+        <p>Nivel: <span id="level">1</span></p>
+        <p>Tiempo restante: <span id="timer">10</span> segundos</p>
+        <img id="rewardImage" src="reward.png" alt="Recompensa" style="display: none;">
+    </div>
+    <audio id="levelUpSound" src="level-up.mp3"></audio>
+    <script src="game.js"></script>
+</body>
+</html>
